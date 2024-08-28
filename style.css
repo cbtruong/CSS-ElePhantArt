@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-bg:#944F50;
+    --main-color:#4D5C8F;
+}
+body{
+    background: var(--color-bg);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 450px;
+}
+.elephant{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 21.875em;
+    height:12.75em;
+    background: var(--main-color);
+    border-radius: 6em;
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 0px;
+}
+.trunk{
+    position: absolute;
+    top: 12em;
+    left: -3.95em;
+    width: 5.4375em;
+    height: 4.5em;
+    border:1.5em solid var(--main-color);
+    border-top: 0;
+    border-bottom-left-radius:6.25em ;
+    border-bottom-right-radius:6.25em ;
+
+}
+/* ---------------------- eyes ------------------------ */
+
+.eye,.eye::before{
+    position: absolute;
+    width: 0.75em;
+    height: 0.75em;
+    background: #242B40;
+    border-radius: 50%;
+}
+.eye{
+    top:4em;
+    left: 1em;
+}
+.eye::before{
+    content: '';
+    left:2em;
+}
+.eye::after{
+    position: absolute;
+    content: '';
+    width: 3.75em;
+    height:5em;
+    background: #7A8ABD;
+    left: 4em;
+    border-radius: 3em;
+    border-top-left-radius: 0px;
+}
+/* ---------------------------- legs -------------------- */
+.legs,.legs::before{
+    position: absolute;
+    width: 2em;
+    height: 7.125em;
+    background: var(--main-color);
+    box-shadow: 2em 0 0 #242B40;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+.legs{
+    top: 12.75em;
+    left: 4.5em;
+}
+.legs::before{
+    content: '';
+    left: 7em;
+}
+
+/* -------------------------- Tail ------------------------ */
+.tail{
+    position: absolute;
+    width: 1.5em;
+    height: 7.5em;
+    background: var(--main-color);
+    top: 8em;
+    left: 20em;
+}
+.tail::before{
+    content: '';
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    background: #8895C0;
+    border-radius: 50%;
+    top: 7em;
+}
+
+@media screen and (min-width:1220px) {
+    body{
+        font-size: 20px;
+        transition: 0.5s ease-in-out;
+    }
+}
+@media screen and (max-width:564px) {
+    body{
+        font-size: 10px;
+        transition: 0.5s ease-in-out;
+    }
+}
