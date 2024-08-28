@@ -70,7 +70,7 @@ body{
     border-top-left-radius: 0px;
 }
 /* ---------------------------- legs -------------------- */
-.legs,.legs::before{
+.leg,.leg::before{
     position: absolute;
     width: 2em;
     height: 7.125em;
@@ -79,11 +79,11 @@ body{
     border-bottom-left-radius: 3em;
     border-bottom-right-radius: 3em;
 }
-.legs{
+.leg{
     top: 12.75em;
     left: 4.5em;
 }
-.legs::before{
+.leg::before{
     content: '';
     left: 7em;
 }
